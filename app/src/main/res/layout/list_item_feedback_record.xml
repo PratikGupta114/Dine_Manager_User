@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#ffffff"
+    android:background="@drawable/rounded_corners"
+    android:padding="10dp"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/lifr_tv_customerName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Pratik Gupta "
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:textColor="#333333"
+            android:textSize="23sp"/>
+        <TextView
+            android:id="@+id/lifr_tv_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9830713036"
+            android:textSize="17sp"
+            android:fontFamily="@font/product_sans_regular"
+            android:textColor="#555555"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience     :     "
+            android:textSize="15sp"
+            android:textColor="#666666"/>
+        <RatingBar
+            android:id="@+id/lifr_experienceRating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service            :     "
+            android:textSize="15sp"
+            android:textColor="#666666"/>
+        <RatingBar
+            android:id="@+id/lifr_serviceRating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food                :     "
+            android:textSize="15sp"
+            android:textColor="#666666"/>
+        <RatingBar
+            android:id="@+id/lifr_foodRating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="15" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks         :     "
+            android:textSize="15sp"
+            android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/lifr_tv_remarks"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="I really enjoyed it"
+            android:fontFamily="@font/roboto_italic"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lifr_tv_dateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dd-mm-yy hh:mm:ss_AM"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textEnd"
+        android:paddingRight="30dp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

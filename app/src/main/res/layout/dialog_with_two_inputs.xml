@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="450dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/buttonBlue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dwi2_closeDialogButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:tint="#ffffff"
+            android:layout_marginLeft="290dp"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackground"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seems like you are new to our restaurant"
+        android:textSize="22dp"
+        android:fontFamily="@font/clan_book_webfont"
+        android:textColor="#333333"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter your name and Email Address."
+        android:textSize="15sp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/clan_book_webfont"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dwi2_nameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Name"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:layout_marginTop="28dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dwi2_nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:hint="Name*"
+            android:fontFamily="@font/product_sans_regular"
+            android:drawableLeft="@drawable/name_icon"
+            android:drawablePadding="15dp"
+            android:paddingStart="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dwi2_emailInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Email Address"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:layout_marginTop="17dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dwi2_emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/product_sans_regular"
+            android:drawableLeft="@drawable/email_icon"
+            android:drawablePadding="15dp"
+            android:paddingStart="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/dwi2_buttonSave"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/buttonBlue"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        />
+
+
+</LinearLayout>

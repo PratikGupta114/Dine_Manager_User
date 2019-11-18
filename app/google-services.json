@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "95846111301",
+    "firebase_url": "https://dine-manager.firebaseio.com",
+    "project_id": "dine-manager",
+    "storage_bucket": "dine-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95846111301:android:356937ebc7db8f75d96b2c",
+        "android_client_info": {
+          "package_name": "com.example.dine_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95846111301-f35majbn4u2smilujcqe0l7fq9lscqu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuTd5O-4mYUAUTsWEFvU4Z3f8yyYhlnFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95846111301-f35majbn4u2smilujcqe0l7fq9lscqu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

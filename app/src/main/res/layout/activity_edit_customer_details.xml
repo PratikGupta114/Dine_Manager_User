@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditCustomerDetails">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar10"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:elevation="6dp"
+        android:gravity="center|start"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imv10_backButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clan_book_webfont"
+            android:paddingLeft="15dp"
+            android:text="Edit Customer Details"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <!-- Customer name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer name"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv10_customerName"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Abhinandadn kumar mitra aaaa"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                />
+            <ImageView
+                android:id="@+id/bt10_customerNameEB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/edit_icon"
+                android:tint="#444444"
+                android:background="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:padding="14dp"/>
+        </LinearLayout>
+
+        <!-- Contact Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv10_contactNumber"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="9830713036"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                />
+            <ImageView
+                android:id="@+id/bt10_contactNumberED"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/edit_icon"
+                android:tint="#444444"
+                android:background="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:padding="14dp"/>
+        </LinearLayout>
+
+        <!-- Email Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv10_emailAddress"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="rgrgupta1148@gmail.com"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                />
+            <ImageView
+                android:id="@+id/bt10_emailAddressEB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/edit_icon"
+                android:tint="#444444"
+                android:background="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:padding="14dp"/>
+        </LinearLayout>
+
+        <!-- Number of Visits -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Number"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv10_roomNumber"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="2500"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                />
+            <ImageView
+                android:id="@+id/bt10_numberOfVisitsEB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/edit_icon"
+                android:tint="#444444"
+                android:background="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:padding="14dp"/>
+        </LinearLayout>
+
+        <!-- Number of seats booked -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of seats booked"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv10_numberOfSeatsBooked"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                />
+            <ImageView
+                android:id="@+id/bt10_numberOfSeatsEB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/edit_icon"
+                android:tint="#444444"
+                android:background="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:padding="14dp"/>
+        </LinearLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/bt10_doneButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Save Changes"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/clan_book_webfont"
+            />
+    </LinearLayout>
+
+</LinearLayout>

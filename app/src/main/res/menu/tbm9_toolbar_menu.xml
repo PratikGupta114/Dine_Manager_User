@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tbm9_menuItemSearch"
+        android:title="Search"
+        android:orderInCategory="@integer/google_play_services_version"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:icon="@drawable/search_icon"/>
+
+    <item
+        android:id="@+id/tbm9_menuItemFilter"
+        android:title="Filter by"
+        
+        android:orderInCategory="@integer/google_play_services_version">
+        <menu>
+            <item
+                android:id="@+id/tbm9_visitFilter1"
+                android:title="1-3 visits"
+                />
+            <item
+                android:id="@+id/tbm9_visitFilter2"
+                android:title="3-6 visits"
+                />
+            <item
+                android:id="@+id/tbm9_visitFilter3"
+                android:title="6-10 visits"
+                />
+            <item
+                android:id="@+id/tbm9_visitFilter4"
+                android:title="10+ visits"
+                />
+            <item
+                android:id="@+id/tbm9_visitFilter5"
+                android:title="All"
+                />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/tbm9_dateFilter"
+        android:title="Select Date" />
+
+</menu>

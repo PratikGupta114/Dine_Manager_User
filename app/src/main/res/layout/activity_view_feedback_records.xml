@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewFeedbackRecordsActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:elevation="6dp"
+        android:gravity="center|start"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imv8_backButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clan_book_webfont"
+            android:paddingLeft="15dp"
+            android:text="All Feedback Records"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv8_allFeedbackRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BBBBBB" />
+    <TextView
+        android:id="@+id/tv8_nothingToDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- Nothing To Display --"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="#333333"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

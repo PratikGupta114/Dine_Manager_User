@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Actions">
+        <menu>
+
+            <item android:id="@+id/menu_setFeedback"
+                android:title="New Feedback"
+                android:icon="@drawable/new_icon" />
+
+            <item android:id="@+id/menu_customerDiary"
+                android:title="New Customer Record"
+                android:icon="@drawable/new_icon2"/>
+
+        </menu>
+    </item>
+    <item android:title="Access">
+        <menu>
+
+            <item android:id="@+id/menu_viewFeedback"
+                android:title="View all Feedbacks"
+                android:icon="@drawable/view_icon"/>
+
+            <item android:id="@+id/menu_viewCustomerData"
+                android:title="View Customer Records"
+                android:icon="@drawable/view_icon2"/>
+
+            <item android:id="@+id/menu_dashBoard"
+                android:title="Dashboard"
+                android:icon="@drawable/ic_dashboard_black_24dp"/>
+
+            <item android:id="@+id/menu_upcomingEvents"
+                android:title="Upcoming Events"
+                android:icon="@drawable/ic_date_range_black_24dp"/>
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/R.id.birthdaysOptions"
+        android:title="Birthdays">
+        <menu>
+
+            <item
+                android:id="@+id/R.id.thisWeekBirthdaysOption"
+                android:title="Upcoming This Week"/>
+            <item
+                android:id="@+id/R.id.thisMonthBirthdaysOption"
+                android:title="Upcoming This Month"/>
+            <item
+                android:id="@+id/R.id.allBirthdaysOption"
+                android:title="All Birthdays"/>
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/R.id.anniversaryOptions"
+        android:title="Anniversaries">
+        <menu>
+
+            <item
+                android:id="@+id/R.id.thisWeekAnniversariesOption"
+                android:title="Upcoming This Week"/>
+            <item
+                android:id="@+id/R.id.thisMonthAnniversariesOption"
+                android:title="Upcoming This Month"/>
+            <item
+                android:id="@+id/R.id.allAnniversariesOption"
+                android:title="All Anniversaries"/>
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/sendMessageToAllOption"
+        android:title="Broadcast an SMS" />
+</menu>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".addRecordActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:elevation="6dp"
+        android:gravity="center|start"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imv2_backButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clan_book_webfont"
+            android:paddingLeft="15dp"
+            android:text="Add New Record"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Contact Number Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/acl_mobileNumberinput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/toolbar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="Contact Number *"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/actv2_mobileNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:fontFamily="@font/product_sans_regular"
+            android:paddingStart="15dp"
+            android:drawableLeft="@drawable/contact_icon"
+            android:drawablePadding="15dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:completionThreshold="5"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- CustomerRecord Name Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/acl_customerNameInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/acl_mobileNumberinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Customer Name *"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/actv2_customerName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/name_icon"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:paddingStart="10dp"
+            android:maxLines="1"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Seats Selector -->
+    <LinearLayout
+        android:id="@+id/seatSelectorLayout"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/acl_customerNameInput"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Seats *"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="#222222"
+            android:fontFamily="@font/product_sans_regular"
+            />
+        <ImageView
+            android:id="@+id/imv2_numberOfSeatsIncrementButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+        <EditText
+            android:id="@+id/et2_numberOfSeats"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+        <ImageView
+            android:id="@+id/imv2_numberOfSeatsDecrementButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_down"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </LinearLayout>
+
+    <!-- Room Number -->
+    <TextView
+        android:id="@+id/tv2_roomNumberHeader"
+        android:layout_toRightOf="@id/seatSelectorLayout"
+        android:layout_below="@id/acl_customerNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Number *"
+        android:textSize="15sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#333333"
+        android:fontFamily="@font/product_sans_regular"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/et2_roomNumber"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv2_roomNumberHeader"
+        android:layout_toRightOf="@id/seatSelectorLayout"
+        android:layout_marginLeft="20dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- Email Address -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/acl_emailAddressInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/seatSelectorLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="Email Address"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/actv2_emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/email_icon"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:paddingStart="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tags -->
+    <TextView
+        android:id="@+id/tv2_tag1"
+        android:layout_below="@+id/acl_emailAddressInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Corporate"
+        android:background="@drawable/unselected_tag"
+        android:textColor="#222222"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxLines="1"
+        />
+    <TextView
+        android:id="@+id/tv2_tag2"
+        android:layout_below="@+id/acl_emailAddressInput"
+        android:layout_toRightOf="@+id/tv2_tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Couple"
+        android:background="@drawable/unselected_tag"
+        android:textColor="#222222"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <TextView
+        android:id="@+id/tv2_tag3"
+        android:layout_below="@+id/acl_emailAddressInput"
+        android:layout_toRightOf="@+id/tv2_tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Dine out"
+        android:background="@drawable/unselected_tag"
+        android:textColor="#222222"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <TextView
+        android:id="@+id/tv2_tag4"
+        android:layout_below="@+id/tv2_tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="VIP"
+        android:background="@drawable/unselected_tag"
+        android:textColor="#222222"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <TextView
+        android:id="@+id/tv2_tag5"
+        android:layout_below="@+id/tv2_tag2"
+        android:layout_toRightOf="@+id/tv2_tag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Friends"
+        android:background="@drawable/unselected_tag"
+        android:textColor="#222222"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <TextView
+        android:id="@+id/tv2_tag6"
+        android:layout_below="@+id/tv2_tag2"
+        android:layout_toRightOf="@+id/tv2_tag5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Family"
+        android:background="@drawable/unselected_tag"
+        android:textColor="#222222"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/bt2_submitButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/acl_emailAddressInput"
+        android:text="Submit Record"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/clan_book_webfont"
+        android:backgroundTint="#000000"
+        android:elevation="6dp"
+        />
+
+</RelativeLayout>

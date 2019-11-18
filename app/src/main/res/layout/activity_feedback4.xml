@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".feedback4_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imv6_backButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:clickable="true"
+            android:tint="#333333"
+            android:focusable="true"
+            android:layout_marginLeft="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6  /  7"
+            android:layout_gravity="center"
+            android:layout_marginLeft="122dp"
+            android:textColor="#333333"
+            android:fontFamily="@font/product_sans_regular"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="287dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/feedback8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please take a moment to share your words about our service."
+            android:textSize="22sp"
+            android:textColor="#222222"
+            android:fontFamily="@font/clan_book_webfont"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="This would help to improve our service better"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:fontFamily="@font/clan_book_webfont"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:lineSpacingExtra="8dp"
+            />
+        <EditText
+            android:id="@+id/et6_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/unselected_tag"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:hint="Share your remarks here."
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_marginHorizontal="10dp"
+            />
+        <Button
+            android:id="@+id/bt6_doneButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:background="@color/buttonBlue"
+            android:layout_marginTop="25dp"
+            android:elevation="6dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

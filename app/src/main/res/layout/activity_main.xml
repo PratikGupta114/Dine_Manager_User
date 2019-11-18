@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#000000"
+            android:id="@+id/toolbar"
+            android:elevation="5dp"
+            android:gravity="center|start"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dine Manager"
+                android:fontFamily="@font/clan_book_webfont"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_marginBottom="12dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/fab_icon2"
+            android:backgroundTint="@color/colorPrimary"
+            app:fabCustomSize="75dp"
+            app:elevation="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/viewCustomerRecordLayout"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:background="#ffffff"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/view_data"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Customer Records"
+                android:textAlignment="center"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:fontFamily="@font/clan_book_webfont"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewFeedbackLayout"
+            android:layout_below="@+id/toolbar"
+            android:layout_toRightOf="@+id/viewCustomerRecordLayout"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:background="#ffffff"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/view_all_feedback"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="All Feedback Records"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="5dp"
+                android:fontFamily="@font/clan_book_webfont"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newFeedbackLayout"
+            android:layout_below="@+id/viewCustomerRecordLayout"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:background="#ffffff"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/add_new_feedback"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ask For Feedback"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:fontFamily="@font/clan_book_webfont"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashboardLayout"
+            android:layout_below="@+id/viewCustomerRecordLayout"
+            android:layout_toRightOf="@+id/newFeedbackLayout"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:background="#ffffff"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/stats2"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Dashboard"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/clan_book_webfont"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upcomingEventsLayout"
+            android:layout_below="@+id/newFeedbackLayout"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:background="#ffffff"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/events"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Upcoming Events"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/clan_book_webfont"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/drawer_menu"
+        app:itemTextAppearance="@style/TextView_style"
+        app:itemIconTint="#575656"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

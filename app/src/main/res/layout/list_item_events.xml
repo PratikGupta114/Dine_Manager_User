@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="#ffffff"
+    android:padding="12dp"
+    android:background="@drawable/rounded_corners"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lie_customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abhinandan mitra aaaaa"
+        android:textColor="#333333"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/lie_optionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#8942;"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:layout_alignParentRight="true"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"/>
+    <TextView
+        android:id="@+id/lie_eventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27th December"
+        android:layout_below="@+id/lie_customerName"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/lie_customerContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9830713036"
+        android:textColor="#333333"
+        android:layout_below="@+id/lie_customerName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+
+
+</RelativeLayout>

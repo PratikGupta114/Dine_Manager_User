@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".feedBack1_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imv3_backButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:clickable="true"
+            android:tint="#333333"
+            android:focusable="true"
+            android:layout_marginLeft="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2  /  7"
+            android:layout_gravity="center"
+            android:layout_marginLeft="122dp"
+            android:textColor="#333333"
+            android:fontFamily="@font/product_sans_regular"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/feedback2" />
+        <TextView
+            android:id="@+id/tv3_helloText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello There ?"
+            android:textColor="#222222"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="28dp"
+            android:fontFamily="@font/clan_book_webfont"
+            />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="Please take a moment to give your valuable feedback."
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:fontFamily="@font/clan_book_webfont"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:lineSpacingExtra="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It would hardly take a minute."
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:fontFamily="@font/clan_book_webfont"
+            />
+        <Button
+            android:id="@+id/bt3_proceedButton"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom|center"
+            android:background="@color/buttonBlue"
+            android:text="Proceed"
+            android:layout_marginTop="115dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/product_sans_regular"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:elevation="6dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

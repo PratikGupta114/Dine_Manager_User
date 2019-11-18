@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dine_manager">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dine_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".eventsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".feedback5_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedback3b_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedBack0_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditCustomerDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedback4_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedback3_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedback2_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addRecordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedBack1_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewFeedbackRecordsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewCustomerRecordsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

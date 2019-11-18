@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback3_Activity"
+    android:background="@drawable/background1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imv5_backButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:clickable="true"
+            android:tint="#333333"
+            android:focusable="true"
+            android:layout_marginLeft="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4  /  7"
+            android:layout_gravity="center"
+            android:layout_marginLeft="122dp"
+            android:textColor="#333333"
+            android:fontFamily="@font/product_sans_regular"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="173dp"
+            android:layout_height="138dp"
+            android:layout_gravity="center"
+            android:src="@drawable/feedback4"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="How good was the food ?"
+            android:textSize="22sp"
+            android:textColor="#222222"
+            android:fontFamily="@font/clan_book_webfont"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="70dp"
+            />
+
+        <com.hsalf.smilerating.SmileRating
+            android:id="@+id/smiley_rating"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="105dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/bt5_previousButton"
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:background="@color/buttonBlue"
+                android:elevation="6dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+            <Button
+                android:id="@+id/bt5_nextButton"
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:background="@color/buttonBlue"
+                android:elevation="6dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="60dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

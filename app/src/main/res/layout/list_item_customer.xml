@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="#ffffff"
+    android:paddingBottom="15dp">
+
+    <!-- Name and options button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/lic_tv_customerName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Abhinandan Kumar Biswas"
+            android:fontFamily="@font/product_sans_regular"
+            android:textSize="23sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/lic_tv_optionsMenuIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="&#8942;"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#444444"
+            android:focusable="true"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+    <!-- Contact Number -->
+    <TextView
+        android:id="@+id/lic_tv_contactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9163826615"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <!-- Email Address -->
+    <TextView
+        android:id="@+id/lic_tv_emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rgrgupta1148@gmail.com"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_light"/>
+
+    <!-- Number of Visits -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Visits  :  "
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            />
+        <TextView
+            android:id="@+id/lic_tv_numberOfVisits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+    <!-- Last Visited on -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Visited on  "
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="16dp"
+
+            android:textSize="15sp"
+            android:textColor="#555555"
+            />
+
+        <TextView
+            android:id="@+id/lic_tv_lastVisitedOn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="dd-mm-yyyy hh:mm:ss_AP"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#555555"
+            />
+
+    </LinearLayout>
+</LinearLayout>
